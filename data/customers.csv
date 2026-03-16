@@ -1,0 +1,501 @@
+customer_id,company_name,segment,country,signup_date
+1,Matthews LLC,SMB,USA,2024-01-26
+2,"Irwin, Walsh and Moore",Mid-Market,USA,2024-05-22
+3,Hernandez PLC,SMB,Canada,2025-07-12
+4,Reed-Jones,Mid-Market,Canada,2024-01-31
+5,Rose and Sons,Mid-Market,USA,2024-01-28
+6,"Boyd, Howell and Sweeney",SMB,Canada,2025-07-12
+7,"Clark, Flores and Vasquez",Mid-Market,UK,2024-10-11
+8,"Osborn, Sanchez and Marquez",Enterprise,USA,2024-06-12
+9,"Fields, Romero and Mills",Mid-Market,Canada,2024-06-08
+10,"Ruiz, Reyes and Wang",SMB,Canada,2024-04-14
+11,Pierce-Carson,Enterprise,USA,2024-12-18
+12,"Patterson, Ponce and Pena",SMB,USA,2025-04-15
+13,Lewis Ltd,SMB,Canada,2025-01-22
+14,Jackson-Cantu,Mid-Market,USA,2025-01-05
+15,Vega-Calderon,SMB,USA,2024-02-16
+16,Chen-Campos,SMB,UK,2024-03-22
+17,Rodriguez PLC,SMB,Canada,2025-01-24
+18,"Nelson, Johnson and Gonzalez",SMB,Canada,2025-01-08
+19,Collins-Patel,Mid-Market,USA,2024-09-30
+20,Duncan Inc,SMB,USA,2024-03-14
+21,Simon-Lowery,Enterprise,Canada,2024-09-07
+22,Graham Inc,Mid-Market,Canada,2025-07-24
+23,Richards LLC,Mid-Market,Canada,2024-02-27
+24,Boone-Payne,Enterprise,Canada,2024-11-19
+25,Harris-Rasmussen,Enterprise,UK,2025-08-03
+26,Leblanc-Kelley,Mid-Market,Canada,2025-05-26
+27,Cruz Group,SMB,Canada,2025-04-14
+28,"Fisher, Trujillo and Mata",Enterprise,USA,2025-07-28
+29,Yoder Ltd,SMB,UK,2025-03-14
+30,Jenkins LLC,Mid-Market,Australia,2024-08-12
+31,Chan PLC,Enterprise,Canada,2025-05-20
+32,Craig-Reeves,Enterprise,Canada,2024-04-22
+33,"Cross, Watson and Cole",Enterprise,USA,2025-03-08
+34,"Patel, Fuller and Koch",Mid-Market,USA,2025-04-24
+35,"Oneal, Daniels and Smith",SMB,USA,2024-01-12
+36,"Edwards, Snyder and Gomez",Enterprise,USA,2025-07-03
+37,Martin and Sons,SMB,Canada,2024-12-14
+38,Dorsey-Walker,Mid-Market,Canada,2025-04-09
+39,Oliver Inc,SMB,Australia,2024-09-26
+40,Gonzalez-Wagner,SMB,Australia,2025-06-03
+41,"Webster, Moore and Dillon",SMB,UK,2024-11-01
+42,Burke Group,Mid-Market,Canada,2024-07-22
+43,Mejia and Sons,SMB,Australia,2025-07-06
+44,Kim PLC,SMB,USA,2024-01-01
+45,"Jenkins, Barnes and White",Mid-Market,Australia,2024-04-24
+46,"Lee, Graham and Mann",SMB,Canada,2024-11-10
+47,"Lucas, Rhodes and Wright",Mid-Market,Australia,2025-08-03
+48,Munoz Ltd,Enterprise,UK,2025-05-12
+49,Johnson LLC,SMB,USA,2025-06-29
+50,"Hamilton, Frank and Jones",Enterprise,Australia,2025-05-01
+51,Davis-Graham,Enterprise,UK,2025-06-24
+52,Rodriguez Ltd,Mid-Market,Australia,2024-08-04
+53,Case-Austin,SMB,USA,2024-07-24
+54,Jones Ltd,Mid-Market,Canada,2025-01-17
+55,Snyder PLC,Mid-Market,Canada,2024-05-03
+56,Jordan-Owens,Enterprise,USA,2024-01-22
+57,"Gonzalez, Robinson and Torres",Mid-Market,Canada,2024-08-13
+58,"Rios, Ingram and Smith",SMB,Canada,2024-03-01
+59,Hendricks-Hunt,SMB,Canada,2024-12-04
+60,Wallace-Wilson,Mid-Market,Canada,2025-05-12
+61,Gomez Ltd,Enterprise,USA,2025-08-07
+62,"Padilla, Kemp and Moore",Mid-Market,UK,2025-04-29
+63,Duran PLC,Enterprise,USA,2024-04-09
+64,"Watson, Yu and Miller",Mid-Market,Canada,2025-02-24
+65,"Cox, Griffith and Ross",SMB,Canada,2024-04-10
+66,"Hawkins, Washington and Jackson",SMB,Canada,2024-04-21
+67,Burns LLC,Enterprise,Canada,2025-04-04
+68,Clark-Beard,Enterprise,Canada,2025-04-18
+69,Porter-Greene,SMB,UK,2025-03-29
+70,Ramos Ltd,SMB,Canada,2024-04-10
+71,Vega-Madden,SMB,Australia,2024-01-16
+72,Mason LLC,SMB,Canada,2024-08-30
+73,Smith Inc,Mid-Market,UK,2024-08-06
+74,Johnson Ltd,SMB,Canada,2024-06-17
+75,Woodward Group,SMB,Australia,2024-09-28
+76,"Carroll, Gould and Schmitt",SMB,Canada,2024-10-19
+77,Rivers and Sons,SMB,USA,2025-07-23
+78,Williams Group,Mid-Market,Canada,2024-07-13
+79,Myers-Shepherd,SMB,USA,2025-08-16
+80,Johnson Inc,Enterprise,Canada,2024-11-17
+81,Carpenter-Mendoza,SMB,Australia,2025-05-29
+82,"Carter, Brown and Lopez",Mid-Market,Australia,2024-02-28
+83,Ryan-Salinas,Enterprise,Canada,2024-07-09
+84,James Inc,Enterprise,Canada,2024-08-28
+85,"Jackson, Jones and Adams",SMB,Canada,2025-08-06
+86,Brown-Williams,SMB,Canada,2024-03-24
+87,"Bush, Goodman and Reynolds",SMB,Canada,2025-06-19
+88,"Hansen, Schwartz and Smith",Mid-Market,Canada,2024-11-17
+89,Smith and Sons,Mid-Market,Canada,2024-11-03
+90,Taylor-Monroe,SMB,Canada,2024-03-15
+91,"Perkins, Silva and Smith",SMB,Australia,2025-07-30
+92,Kennedy Group,Enterprise,USA,2024-08-06
+93,Vincent and Sons,Enterprise,UK,2024-12-23
+94,"Bowers, Anderson and Montgomery",SMB,Canada,2025-01-13
+95,Davis PLC,Mid-Market,USA,2025-07-10
+96,Hill-Donovan,SMB,Canada,2025-06-25
+97,"Wallace, Chung and Lewis",SMB,Australia,2024-11-02
+98,Russell-Hubbard,Enterprise,Canada,2024-05-17
+99,Carrillo-Yang,SMB,Canada,2025-07-20
+100,Costa-Atkins,Mid-Market,USA,2024-08-03
+101,Barrett-Bradshaw,Mid-Market,USA,2024-09-27
+102,"Fry, Hansen and Perry",Mid-Market,Canada,2024-02-22
+103,Nelson LLC,Mid-Market,Canada,2024-10-10
+104,Gutierrez-Johnson,Mid-Market,USA,2024-05-13
+105,"Walker, Roberts and Ferguson",Mid-Market,USA,2025-03-28
+106,Ruiz Ltd,Mid-Market,Canada,2024-01-10
+107,Irwin PLC,SMB,USA,2024-06-01
+108,"Crosby, Houston and Smith",SMB,USA,2025-08-19
+109,Becker Ltd,Mid-Market,Canada,2024-02-12
+110,Velazquez PLC,SMB,UK,2024-02-10
+111,Davis Ltd,Mid-Market,USA,2024-09-12
+112,"Perez, Mann and Anderson",Mid-Market,UK,2025-07-27
+113,Potter-Miller,Mid-Market,Australia,2024-06-07
+114,Freeman and Sons,Mid-Market,Australia,2024-06-15
+115,Thomas and Sons,SMB,Canada,2025-02-26
+116,Page-Miller,SMB,USA,2024-12-06
+117,"Snyder, Collins and Miller",Mid-Market,Canada,2024-09-11
+118,Chambers Group,SMB,Canada,2024-04-20
+119,"Harper, Salazar and Walker",Enterprise,Canada,2025-04-26
+120,Case-George,SMB,Canada,2025-04-16
+121,"Bates, Turner and Barnes",SMB,Canada,2024-08-21
+122,"Mills, Turner and Fisher",SMB,Canada,2025-02-12
+123,Rodriguez-Jordan,SMB,Canada,2024-10-12
+124,"Jones, Holmes and Roberts",Mid-Market,Canada,2025-07-03
+125,Rodriguez Inc,Enterprise,Canada,2024-09-24
+126,"Blake, Grant and Howard",SMB,Canada,2024-09-28
+127,Cordova-Wall,SMB,USA,2024-12-19
+128,Zamora-Sanchez,Mid-Market,Canada,2025-06-07
+129,Willis PLC,SMB,Canada,2024-07-13
+130,Wilson-Williams,SMB,USA,2024-01-02
+131,Moore-Bush,SMB,Canada,2024-07-20
+132,"Church, Smith and Johnson",Enterprise,USA,2024-12-04
+133,Peterson LLC,SMB,USA,2024-05-07
+134,Sanchez-Herrera,Mid-Market,USA,2024-11-12
+135,Brown-Howell,Mid-Market,USA,2024-10-29
+136,Bailey-Lloyd,Enterprise,USA,2025-01-23
+137,Wiley Inc,SMB,Canada,2025-08-05
+138,"Shelton, Gutierrez and Phillips",Mid-Market,Canada,2024-01-01
+139,"Mason, Sanchez and Hart",Mid-Market,USA,2025-08-16
+140,"Patel, Johnson and Harrison",Mid-Market,Canada,2025-03-28
+141,Montes Inc,Mid-Market,USA,2025-04-29
+142,Marshall-Reid,SMB,USA,2024-06-22
+143,Monroe-Cooper,Mid-Market,Canada,2024-12-09
+144,Nguyen Group,SMB,USA,2024-08-28
+145,"Hill, Schmidt and Bates",Mid-Market,Canada,2024-07-22
+146,"White, Moss and King",Enterprise,USA,2025-05-01
+147,Rose-Cook,SMB,Canada,2025-04-11
+148,"Weber, Noble and Parker",SMB,USA,2024-07-18
+149,Jones Ltd,Mid-Market,Canada,2025-02-13
+150,Le Group,SMB,UK,2024-01-06
+151,Turner-Diaz,SMB,USA,2024-04-19
+152,Ferrell-Smith,Mid-Market,Canada,2025-06-14
+153,Pope Inc,SMB,Canada,2024-05-04
+154,"Armstrong, Molina and Alexander",SMB,Australia,2025-06-27
+155,Mills Ltd,SMB,USA,2025-03-29
+156,Hill-Holland,SMB,Canada,2025-05-31
+157,Harper LLC,SMB,UK,2025-04-01
+158,"Moreno, Small and Hudson",SMB,Canada,2025-05-01
+159,Vargas PLC,SMB,USA,2024-10-10
+160,"Sloan, Gray and Brown",Mid-Market,Canada,2024-09-01
+161,Lopez-Hughes,Enterprise,Canada,2024-10-19
+162,"Meadows, Allen and Alexander",Mid-Market,Canada,2025-07-07
+163,"Mcconnell, Pham and Griffin",Enterprise,USA,2025-01-27
+164,Evans-Rivera,SMB,Canada,2024-03-06
+165,Chavez Ltd,Mid-Market,Canada,2025-04-22
+166,Day Group,Mid-Market,Canada,2025-03-06
+167,"Lane, Porter and Franklin",SMB,UK,2024-01-21
+168,Henry-Jordan,SMB,Canada,2025-01-24
+169,"Sanchez, Ortiz and Burton",SMB,USA,2024-11-01
+170,Wall-Hart,SMB,USA,2025-03-05
+171,Ferrell Ltd,SMB,Canada,2024-08-13
+172,Russell-Sutton,Mid-Market,Canada,2025-05-12
+173,Roberts Ltd,Mid-Market,USA,2025-02-18
+174,"Warner, Garner and Gonzalez",SMB,Australia,2024-05-10
+175,Price-Kennedy,Mid-Market,USA,2025-02-07
+176,"Collins, Brown and Austin",SMB,USA,2024-03-26
+177,Lewis-Lee,Enterprise,Canada,2025-04-17
+178,Brock Inc,Mid-Market,Canada,2024-12-01
+179,Martin-Mccarthy,Mid-Market,Canada,2025-01-23
+180,Clark and Sons,SMB,Canada,2025-03-07
+181,"Rogers, Murphy and Fields",Enterprise,USA,2024-01-20
+182,"Mendez, Lee and Meyer",Enterprise,Canada,2024-12-24
+183,Harmon-Hicks,Enterprise,USA,2024-02-11
+184,"Russell, Cook and Bishop",SMB,UK,2024-07-23
+185,Hernandez-Maddox,SMB,Canada,2024-09-01
+186,Thomas and Sons,SMB,Australia,2025-07-31
+187,Chambers-Wade,Mid-Market,USA,2024-09-19
+188,"Adams, Watson and Holland",Enterprise,USA,2024-04-27
+189,Bennett PLC,Enterprise,Canada,2024-11-14
+190,Gomez-Snyder,Enterprise,USA,2024-11-15
+191,"Obrien, Torres and Short",SMB,Canada,2025-01-19
+192,Hudson Ltd,SMB,USA,2024-03-18
+193,Jones-Nguyen,SMB,Canada,2024-09-05
+194,Cox-Campbell,SMB,USA,2024-05-03
+195,"Arnold, Peterson and Mccoy",SMB,Canada,2024-02-12
+196,"Bailey, Goodman and Smith",Mid-Market,Canada,2025-01-14
+197,"Wells, Chan and White",SMB,UK,2024-01-13
+198,Stein-Alexander,SMB,Canada,2024-04-18
+199,Chambers-Strickland,Mid-Market,USA,2025-04-15
+200,Cox-Jackson,Mid-Market,Australia,2025-06-18
+201,Shelton-Martinez,Mid-Market,USA,2025-07-05
+202,Green Ltd,Mid-Market,Canada,2024-10-01
+203,"Robinson, Green and Caldwell",Mid-Market,Canada,2024-03-29
+204,Ryan Group,Mid-Market,USA,2025-04-20
+205,Ross PLC,SMB,Canada,2024-12-10
+206,Russell-Jenkins,SMB,Canada,2024-07-05
+207,"Reeves, Wells and Luna",Mid-Market,Canada,2024-09-21
+208,Page and Sons,SMB,USA,2024-10-09
+209,Phillips and Sons,Mid-Market,Canada,2024-07-14
+210,Beck-Hunter,SMB,USA,2025-05-15
+211,"Bradley, Jones and Chavez",Mid-Market,USA,2025-05-02
+212,Lee-Waller,Mid-Market,Canada,2024-01-18
+213,Mahoney LLC,Mid-Market,Canada,2024-09-06
+214,"Duncan, Ward and King",SMB,USA,2025-04-29
+215,"Terrell, Mitchell and Kim",Mid-Market,Canada,2025-07-17
+216,"Terry, Martinez and Crawford",SMB,Canada,2024-10-04
+217,Thompson LLC,Mid-Market,Canada,2024-07-16
+218,"Jenkins, Crane and Daniel",SMB,Canada,2024-07-08
+219,"Anderson, Campbell and Peters",SMB,USA,2024-10-10
+220,"Hunt, Reed and Henry",SMB,USA,2025-06-21
+221,Elliott and Sons,SMB,Canada,2024-07-17
+222,Jones-Robinson,Mid-Market,Canada,2024-11-05
+223,Blair-Klein,Mid-Market,Canada,2024-10-07
+224,Davis-Dominguez,Enterprise,USA,2024-10-26
+225,"Brennan, Perry and Taylor",Enterprise,Canada,2025-05-17
+226,"Lopez, Vega and Figueroa",Enterprise,Canada,2024-10-18
+227,Curtis-Mcgee,Mid-Market,Australia,2024-07-07
+228,"Murphy, Murray and Tanner",Mid-Market,Canada,2025-05-04
+229,Yang Ltd,Enterprise,Canada,2025-05-18
+230,"Bender, Martinez and Adams",SMB,Canada,2024-02-24
+231,Turner LLC,SMB,Canada,2024-11-07
+232,Fernandez-Gomez,Mid-Market,USA,2025-07-25
+233,Bennett Ltd,SMB,USA,2024-08-19
+234,Smith LLC,Mid-Market,Canada,2025-03-29
+235,Fisher-Moore,SMB,Canada,2025-03-15
+236,Vasquez-Mcdaniel,SMB,Australia,2024-04-11
+237,"Wallace, Williams and Flores",Mid-Market,Canada,2024-08-04
+238,Hall and Sons,Enterprise,Canada,2024-09-02
+239,"Calhoun, Gilbert and Nelson",Enterprise,Canada,2024-01-03
+240,Stewart-Porter,SMB,Canada,2025-04-26
+241,Woods-Norris,Mid-Market,USA,2024-10-16
+242,Cline-Brown,Mid-Market,Australia,2024-08-27
+243,Nguyen-Chapman,SMB,Canada,2024-07-21
+244,Gomez-Mcpherson,Mid-Market,Australia,2024-06-01
+245,Gordon PLC,SMB,Canada,2024-03-14
+246,Torres Inc,SMB,Australia,2025-08-05
+247,"Hunter, Gonzalez and Carter",Mid-Market,USA,2025-04-24
+248,Berger LLC,SMB,USA,2024-10-05
+249,"Lopez, Goodman and Moore",Mid-Market,USA,2024-03-23
+250,"Hays, Macdonald and Wheeler",SMB,USA,2024-11-26
+251,"Ramos, Williams and Delacruz",Enterprise,Australia,2024-08-22
+252,Wilson PLC,SMB,USA,2025-08-12
+253,"Simpson, Thomas and Martinez",Enterprise,USA,2024-10-02
+254,Hartman Inc,SMB,Canada,2024-06-28
+255,Massey-Watkins,SMB,Canada,2024-10-11
+256,Roberts-Irwin,SMB,Australia,2025-05-18
+257,Pierce-Vincent,Mid-Market,Canada,2025-02-22
+258,"Erickson, Sullivan and Morris",SMB,Canada,2024-06-13
+259,"Marquez, Morrison and Hale",SMB,USA,2024-10-22
+260,Rivera-Jennings,Mid-Market,Canada,2025-07-17
+261,Lee Group,Enterprise,Canada,2024-09-15
+262,Hart Ltd,SMB,UK,2025-02-17
+263,"Torres, Pace and Nguyen",SMB,USA,2024-01-02
+264,"Doyle, Wells and Gordon",Mid-Market,Canada,2025-02-27
+265,Camacho-Schmidt,Mid-Market,USA,2025-05-25
+266,Rice LLC,SMB,Canada,2024-07-27
+267,"Mclean, Ashley and Henderson",Enterprise,Canada,2024-10-21
+268,Johnson Inc,SMB,Canada,2024-05-04
+269,Hall Inc,SMB,USA,2024-09-02
+270,Knight-Waller,Mid-Market,USA,2024-01-15
+271,Faulkner-Williams,Enterprise,Canada,2024-04-26
+272,Nichols-Miller,Enterprise,Canada,2024-06-06
+273,Norris PLC,SMB,USA,2025-06-05
+274,"Marks, Adams and Brown",Mid-Market,Australia,2025-05-09
+275,Harrington and Sons,Mid-Market,Canada,2025-07-18
+276,"Sanchez, Solis and Lee",Enterprise,USA,2025-06-04
+277,Hancock Group,Enterprise,Canada,2024-03-12
+278,Lewis-Johnson,SMB,Canada,2025-02-28
+279,"Eaton, Martinez and Ryan",SMB,UK,2024-09-30
+280,"Nelson, Lam and Padilla",Mid-Market,UK,2024-11-01
+281,"Day, Franklin and Ashley",SMB,UK,2025-05-16
+282,Petersen PLC,Mid-Market,Canada,2025-05-10
+283,Gill Group,SMB,Canada,2025-07-10
+284,Walker-Johnson,SMB,Australia,2024-07-12
+285,Petersen-Elliott,Mid-Market,Canada,2025-01-27
+286,Jackson Inc,SMB,Canada,2024-02-14
+287,Bryant-Smith,Mid-Market,Canada,2025-01-25
+288,Meyer-Harris,SMB,Canada,2024-06-04
+289,"Mathis, Miller and Jones",Enterprise,Australia,2025-05-29
+290,Nelson PLC,Mid-Market,UK,2024-04-12
+291,Garcia-Duncan,Mid-Market,Australia,2025-06-22
+292,Jackson Inc,Enterprise,Canada,2024-05-27
+293,Hendricks-Evans,SMB,Canada,2024-06-07
+294,Bradley LLC,SMB,Canada,2024-09-28
+295,Shannon-Grimes,SMB,UK,2024-03-23
+296,Sanchez-Rivera,SMB,Canada,2025-06-30
+297,"Mcknight, Alvarez and Morales",Mid-Market,UK,2025-05-14
+298,"Alvarez, Curtis and Anderson",Enterprise,Canada,2024-03-11
+299,Duran-Contreras,SMB,Australia,2024-10-21
+300,"Hall, Kennedy and Nash",SMB,Australia,2025-03-20
+301,Sullivan LLC,SMB,Canada,2024-04-12
+302,Frederick-Ellis,SMB,Canada,2024-01-30
+303,Bell LLC,SMB,Canada,2024-10-27
+304,Herrera and Sons,Mid-Market,USA,2024-09-07
+305,"Baker, Conner and Kelly",SMB,Canada,2024-07-03
+306,Green-Olson,Enterprise,USA,2025-01-26
+307,Ramos-Crawford,Mid-Market,Canada,2025-08-20
+308,Beck-Mcdowell,Mid-Market,Canada,2024-09-17
+309,"Lane, Lowe and Jones",SMB,Australia,2025-04-21
+310,"Kelly, Lawson and Hammond",SMB,Canada,2024-06-10
+311,"Ellis, Lopez and Foster",SMB,USA,2024-11-02
+312,Hansen LLC,Mid-Market,Canada,2024-09-13
+313,Mitchell-Hill,Mid-Market,UK,2025-01-28
+314,"Lara, Williams and Williams",Enterprise,USA,2025-01-25
+315,"Mccormick, Ramirez and Williams",SMB,Canada,2024-10-29
+316,Hernandez-Baker,SMB,Canada,2025-02-09
+317,Adams-Wilson,SMB,Australia,2024-02-20
+318,"Jimenez, Tran and Nguyen",SMB,USA,2024-10-20
+319,Gross-Dorsey,Mid-Market,Canada,2024-12-26
+320,"Lopez, Wilson and Martinez",Enterprise,USA,2024-09-13
+321,"Matthews, Davis and Burns",SMB,USA,2024-05-20
+322,Ruiz-Gibson,SMB,Canada,2024-02-10
+323,"Marsh, Douglas and Harris",Mid-Market,Canada,2025-08-16
+324,Roberts LLC,Enterprise,Canada,2024-10-29
+325,"Conway, Kennedy and Horne",Mid-Market,Canada,2024-07-24
+326,Johnson-Ellis,Mid-Market,USA,2025-01-09
+327,Schmidt and Sons,SMB,Canada,2024-06-17
+328,Martin PLC,SMB,Australia,2025-05-08
+329,"Hernandez, Berry and Long",Mid-Market,UK,2024-12-12
+330,"Anthony, Cooley and Garcia",Mid-Market,Canada,2024-03-18
+331,Levine-Hall,SMB,Australia,2025-02-10
+332,Mccoy LLC,SMB,Canada,2025-01-09
+333,"Good, Bishop and Marshall",Mid-Market,USA,2024-09-27
+334,"Goodman, Bond and Warner",Mid-Market,USA,2024-09-25
+335,Hardin-Wilson,SMB,Canada,2025-01-15
+336,"Kelly, Atkinson and Myers",Mid-Market,USA,2024-01-26
+337,Fox Ltd,SMB,Australia,2024-12-01
+338,Cooper Group,Mid-Market,USA,2024-03-05
+339,Bruce-Baker,Mid-Market,USA,2024-11-05
+340,Hill Ltd,Enterprise,Australia,2024-02-16
+341,Rivera-Bates,Mid-Market,Canada,2025-05-19
+342,Mathews-Morales,Mid-Market,Canada,2025-07-04
+343,Schultz-Maxwell,Mid-Market,Canada,2025-07-07
+344,"Morgan, Pollard and Green",SMB,UK,2024-06-07
+345,Mendoza-George,SMB,USA,2025-05-16
+346,Levy PLC,SMB,Canada,2024-10-13
+347,Miller Ltd,Mid-Market,Canada,2025-03-30
+348,Williams-Clark,Mid-Market,Canada,2025-01-06
+349,"Smith, Hawkins and Schwartz",SMB,Australia,2025-07-11
+350,Lee PLC,SMB,Canada,2024-03-03
+351,Pacheco-Anderson,Enterprise,Australia,2024-05-05
+352,"Yates, Gomez and Jenkins",SMB,USA,2024-04-03
+353,Wells-Gentry,SMB,Canada,2024-01-22
+354,"Wilson, Bennett and Robbins",Mid-Market,USA,2024-05-08
+355,"Abbott, Cruz and Castillo",Mid-Market,Canada,2025-07-21
+356,Nguyen Inc,Mid-Market,Canada,2024-08-26
+357,Wilson Ltd,Enterprise,Canada,2024-01-03
+358,Smith Ltd,SMB,USA,2024-05-13
+359,"Johnson, Lopez and Cox",SMB,USA,2024-04-22
+360,"Mccullough, Key and Burke",Enterprise,Canada,2024-01-16
+361,"Everett, Owen and Roy",SMB,Canada,2024-11-27
+362,Lopez-Ali,Mid-Market,USA,2024-05-09
+363,Holt PLC,Mid-Market,Canada,2024-03-06
+364,Atkinson LLC,SMB,USA,2025-06-09
+365,Burch-Flores,Mid-Market,Australia,2024-08-14
+366,Elliott Inc,Enterprise,Canada,2025-06-17
+367,Fields Ltd,SMB,Canada,2024-02-01
+368,"Hall, Garrett and Hooper",Mid-Market,Canada,2025-02-15
+369,"Mitchell, Jackson and Brown",Enterprise,Canada,2025-03-30
+370,"Burgess, Anderson and Simmons",Enterprise,Canada,2024-05-31
+371,Lynch-Carter,Mid-Market,USA,2025-08-22
+372,"Joyce, Beck and Foster",Mid-Market,Canada,2025-06-27
+373,Hamilton-Williams,Mid-Market,Canada,2025-03-16
+374,Powell Group,SMB,USA,2025-07-18
+375,Zamora-Martin,Mid-Market,UK,2025-04-07
+376,Miller-Waters,Mid-Market,Canada,2025-04-09
+377,"Thompson, Davenport and Myers",SMB,Canada,2024-11-16
+378,Lawrence LLC,SMB,Australia,2025-01-18
+379,"Jefferson, Nguyen and Andrews",SMB,Canada,2025-04-30
+380,Jones and Sons,SMB,Canada,2024-04-05
+381,"Watson, Silva and Lopez",SMB,UK,2025-01-16
+382,Lee and Sons,SMB,Australia,2025-08-23
+383,Thomas-Walker,SMB,Canada,2024-05-05
+384,"Camacho, Coleman and Harris",SMB,UK,2025-03-09
+385,"Peterson, Thompson and Mejia",SMB,USA,2024-10-21
+386,"Larson, Walker and Bradley",Mid-Market,USA,2025-08-14
+387,Jones-Smith,Enterprise,Canada,2025-05-08
+388,Day Inc,Enterprise,Canada,2025-07-23
+389,"Miller, Richardson and Cowan",SMB,Canada,2025-08-10
+390,Johnson-Sanders,Mid-Market,Australia,2025-07-28
+391,"Lamb, Hopkins and Patton",SMB,Canada,2025-07-24
+392,Ramos Ltd,SMB,Canada,2024-09-30
+393,"Cook, Pope and Johnston",Mid-Market,Australia,2024-11-12
+394,"Smith, Bennett and Cline",Mid-Market,UK,2024-07-04
+395,Ryan-Jackson,SMB,Canada,2025-02-14
+396,Martinez Ltd,SMB,Canada,2024-02-01
+397,Meadows and Sons,Mid-Market,Canada,2025-01-20
+398,"Sampson, Adams and Myers",Mid-Market,Canada,2025-01-13
+399,"Salinas, Gilbert and Smith",Mid-Market,USA,2025-08-04
+400,Barton and Sons,SMB,Canada,2024-06-08
+401,Hays-Aguilar,SMB,Canada,2024-03-24
+402,Evans Inc,SMB,USA,2025-05-12
+403,Miller Inc,Mid-Market,USA,2024-08-08
+404,"Scott, Arellano and Cox",Enterprise,Canada,2025-03-16
+405,"Howe, Cooper and Solomon",SMB,USA,2025-05-13
+406,Miranda LLC,Mid-Market,Canada,2024-08-13
+407,Moore-Hernandez,SMB,Canada,2024-01-08
+408,Gray-Reyes,SMB,USA,2024-05-20
+409,Montgomery Group,Mid-Market,Canada,2024-05-02
+410,Mccarty-Huerta,SMB,Canada,2024-06-28
+411,Martinez-Rollins,Mid-Market,USA,2024-08-23
+412,"Garrison, Conley and Orr",SMB,Canada,2024-12-28
+413,"Carter, Fields and Odonnell",SMB,Canada,2024-02-13
+414,Walker-Thompson,Mid-Market,UK,2024-03-20
+415,"Paul, Lowe and Nguyen",SMB,Canada,2025-08-10
+416,"Williams, Greene and Thompson",SMB,Canada,2024-10-23
+417,Mitchell Group,Enterprise,Canada,2024-11-28
+418,Ortega-Lambert,SMB,UK,2025-04-16
+419,"Young, Cortez and Mccormick",SMB,Canada,2024-03-31
+420,Cooper PLC,Enterprise,USA,2025-03-22
+421,"Powell, Rogers and Mcgrath",Mid-Market,UK,2025-02-09
+422,Hunter PLC,SMB,Canada,2024-08-14
+423,Mccormick-Donaldson,Enterprise,USA,2025-06-06
+424,"Stafford, Murphy and Lewis",Mid-Market,Australia,2024-07-17
+425,Burgess and Sons,Mid-Market,Canada,2024-05-31
+426,Glover Inc,Enterprise,Canada,2024-07-21
+427,Holt-Harvey,Enterprise,Canada,2024-03-18
+428,"Hughes, Silva and Cole",SMB,Canada,2025-05-20
+429,Ochoa LLC,SMB,Canada,2025-08-16
+430,Stafford-Reilly,SMB,USA,2025-08-01
+431,Soto-Davis,SMB,UK,2024-11-26
+432,"Allen, Williams and Church",SMB,Canada,2024-06-03
+433,"Carrillo, Bradley and Jenkins",Mid-Market,USA,2024-11-06
+434,"Jackson, Robinson and Reese",SMB,USA,2024-12-26
+435,Moore PLC,Mid-Market,Canada,2025-04-07
+436,Delacruz-Humphrey,Mid-Market,Canada,2024-10-20
+437,Perkins and Sons,SMB,USA,2024-04-02
+438,Ford-Farrell,Mid-Market,USA,2025-04-18
+439,"Clark, Smith and Stone",SMB,Canada,2024-02-12
+440,"Martinez, Lamb and Johnson",SMB,Canada,2024-07-11
+441,Jackson-Hawkins,Mid-Market,Australia,2024-06-03
+442,Montes and Sons,Mid-Market,Australia,2024-12-17
+443,"Mitchell, Edwards and Alvarez",Enterprise,Canada,2024-06-25
+444,Diaz-Moore,SMB,USA,2025-03-25
+445,"Patel, Parks and Crawford",SMB,Canada,2025-01-07
+446,Salazar Ltd,Mid-Market,USA,2025-02-22
+447,Jennings PLC,SMB,USA,2024-02-23
+448,Jones PLC,SMB,Canada,2024-03-08
+449,Gibson-Mcbride,SMB,Canada,2025-01-30
+450,Wong and Sons,SMB,Canada,2024-06-02
+451,"Rogers, Perez and Stevens",SMB,Australia,2024-05-24
+452,Maldonado and Sons,Mid-Market,Canada,2025-02-05
+453,"Conley, Reyes and Chavez",SMB,Canada,2024-03-27
+454,Padilla LLC,Mid-Market,UK,2024-12-02
+455,Mitchell-Cunningham,SMB,Canada,2025-06-23
+456,Tanner-Goodwin,SMB,Canada,2025-06-04
+457,Hayes-Grimes,Mid-Market,Australia,2024-07-03
+458,May Ltd,Mid-Market,Canada,2025-05-12
+459,Lewis Group,SMB,Canada,2024-06-07
+460,Fletcher and Sons,SMB,USA,2024-04-13
+461,Foster-Bennett,Mid-Market,Canada,2025-06-23
+462,Jacobs-Stephens,Mid-Market,USA,2024-05-14
+463,"Barnett, Sherman and Castro",Enterprise,UK,2024-07-04
+464,"Tyler, Williams and Serrano",SMB,USA,2024-06-18
+465,Hanson Group,Enterprise,USA,2025-01-08
+466,Lamb-Johnson,Mid-Market,USA,2025-03-30
+467,Russell-Pitts,SMB,Canada,2025-04-04
+468,Roman Inc,Mid-Market,Australia,2025-04-25
+469,"Diaz, Robinson and Clark",Enterprise,Australia,2025-08-07
+470,Mayo-Logan,Mid-Market,USA,2024-10-15
+471,Morris-Lloyd,Mid-Market,Australia,2025-03-04
+472,Buchanan PLC,SMB,UK,2024-05-21
+473,Little-Clark,Enterprise,UK,2025-05-07
+474,Brewer Group,SMB,USA,2024-04-15
+475,Henry-Wilcox,Mid-Market,Canada,2024-05-07
+476,"Haas, Carr and Williams",SMB,Canada,2024-10-06
+477,Stewart LLC,Mid-Market,Canada,2025-03-23
+478,Rosario-Lyons,SMB,UK,2025-04-06
+479,Patton LLC,SMB,Canada,2025-02-28
+480,Manning-Bell,Mid-Market,Canada,2024-08-29
+481,Coleman-Yates,Enterprise,Canada,2024-08-17
+482,"Gonzalez, Franklin and Collins",SMB,USA,2024-12-09
+483,"Hayden, Green and Watson",Enterprise,Australia,2024-10-20
+484,Soto-Dickerson,Mid-Market,USA,2024-05-22
+485,Parker-Collier,Mid-Market,Australia,2024-01-06
+486,Perkins PLC,Enterprise,UK,2024-08-08
+487,Petersen-Jacobs,Mid-Market,Canada,2025-06-24
+488,Wilson-Reilly,SMB,Canada,2024-08-31
+489,Barnett-Hutchinson,Enterprise,USA,2025-03-05
+490,Davis PLC,SMB,Canada,2024-03-05
+491,Parks Ltd,SMB,Canada,2025-07-02
+492,Little and Sons,Mid-Market,USA,2024-09-04
+493,Schwartz and Sons,Mid-Market,USA,2024-01-02
+494,"Rose, Thompson and Torres",Mid-Market,Canada,2025-03-02
+495,Brown Group,SMB,Australia,2025-06-20
+496,Martin-Perry,Enterprise,USA,2025-06-22
+497,Chavez-Dunn,SMB,USA,2025-06-03
+498,"Alvarez, Peters and Cohen",Mid-Market,Canada,2025-04-26
+499,Good-Anderson,Mid-Market,Canada,2025-01-17
+500,Schwartz-Evans,Enterprise,Canada,2024-03-10

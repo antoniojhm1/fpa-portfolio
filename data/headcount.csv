@@ -1,0 +1,43 @@
+employee_id,name,department,salary,hire_date,status
+1,Steve Gonzalez,Sales & Marketing,65000.0,2025-04-05,Active
+2,Suzanne Gonzalez,Sales & Marketing,97000.0,2024-08-10,Active
+3,Kyle Smith,Sales & Marketing,76000.0,2023-03-12,Active
+4,Cody Peterson,Sales & Marketing,93000.0,2024-01-05,Active
+5,Belinda Montgomery,Sales & Marketing,76000.0,2023-07-13,Active
+6,Susan Ballard,Sales & Marketing,84000.0,2023-12-02,Active
+7,Denise Richardson,Sales & Marketing,65000.0,2023-08-15,Active
+8,David Mckay,Sales & Marketing,116000.0,2023-08-17,Active
+9,Nicholas Smith,Sales & Marketing,82000.0,2024-07-17,Active
+10,Alexis Tucker,Sales & Marketing,72000.0,2025-06-25,Active
+11,Lynn Banks,Sales & Marketing,71000.0,2025-06-30,Active
+12,Valerie Cordova,Sales & Marketing,84000.0,2025-04-28,Active
+13,Lance Brown,R&D,127000.0,2025-08-13,Active
+14,Jessica Griffin,R&D,82000.0,2023-05-19,Active
+15,Robert Werner,R&D,94000.0,2023-09-12,Active
+16,Emily Clark,R&D,100000.0,2024-04-13,Active
+17,James Park,R&D,108000.0,2023-09-29,Active
+18,James Herrera,R&D,88000.0,2024-11-02,Active
+19,Rachel Fuller,R&D,96000.0,2023-11-05,Active
+20,Jacob Wallace,R&D,130000.0,2024-04-06,Active
+21,Megan Fletcher,R&D,115000.0,2024-03-01,Active
+22,Jason Gonzalez,R&D,127000.0,2024-12-10,Active
+23,Thomas Cruz,G&A,77000.0,2024-11-04,Active
+24,Joseph Green,G&A,85000.0,2025-04-21,Active
+25,Dean James,G&A,57000.0,2023-01-29,Active
+26,Peter Greene,G&A,105000.0,2025-03-21,Active
+27,Kimberly Bell,G&A,72000.0,2024-10-28,Active
+28,Karen Oliver,G&A,104000.0,2024-12-25,Active
+29,Edward White DDS,Engineering,150000.0,2024-08-05,Active
+30,Jason Herrera,Engineering,141000.0,2024-01-26,Active
+31,Melissa Flores,Engineering,96000.0,2023-02-21,Active
+32,Michelle Cunningham,Engineering,134000.0,2025-04-04,Active
+33,Autumn Dixon,Engineering,135000.0,2024-10-24,Active
+34,Peter Collins,Engineering,118000.0,2024-05-13,Active
+35,James Jones,Engineering,90000.0,2023-10-20,Active
+36,Brandy Clark,Engineering,99000.0,2023-09-27,Active
+37,Samuel Mullins,Operations,64000.0,2023-02-08,Active
+38,Jennifer Solomon,Operations,64000.0,2025-05-11,Active
+39,Mario Johnson,Operations,60000.0,2023-06-08,Active
+40,James Huber,Operations,86000.0,2025-03-23,Active
+41,Brandy Little,Operations,93000.0,2024-01-11,Active
+42,Michael Pena,Operations,57000.0,2023-06-17,Active
