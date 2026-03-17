@@ -10,7 +10,7 @@
 - [x] 5 CSV files created: customers, contracts, revenue_transactions, headcount, budget
 - [x] All files pushed to GitHub
 
-## Data summary
+## Data summary — FORGE (fictional B2B SaaS company)
 - 500 customers across Enterprise, Mid-Market, SMB segments
 - 7,853 revenue transactions (Jan 2024 – Mar 2026)
 - 42 employees across 5 departments
