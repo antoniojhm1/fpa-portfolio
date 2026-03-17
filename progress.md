@@ -24,11 +24,15 @@
 - [x] Budget vs actual — all departments over budget, G&A worst at +5.5%
 - [x] JOIN queries connecting customers, contracts, revenue tables
 
-## Phase 3 — Python Modeling (UPCOMING)
-- [ ] Jupyter notebook setup
-- [ ] Revenue forecasting model
-- [ ] Cohort retention analysis
-- [ ] Variance engine
+## Phase 3 — Python Modeling (IN PROGRESS)
+- [x] Jupyter notebook setup complete
+- [x] Notebook 1: Revenue forecast complete
+  - Historical trend analysis Jan 2024 – Mar 2026
+  - 6-month forward forecast (Apr–Sep 2026)
+  - Trend slope: -$3,797/month (plateau phase)
+  - Charts saved: revenue_trend.png, revenue_forecast.png
+- [ ] Notebook 2: Cohort retention analysis
+- [ ] Notebook 3: Variance engine
 
 ## Phase 4 — Power BI Dashboard (UPCOMING)
 - [ ] Connect Power BI to SQLite
