@@ -14,9 +14,9 @@ START_DATE = datetime(2024, 1, 1)
 END_DATE = datetime(2026, 3, 31)
 
 SEGMENTS = {
-    "Enterprise":  {"weight": 0.20, "mrr_min": 5000,  "mrr_max": 15000, "churn_rate": 0.01},
-    "Mid-Market":  {"weight": 0.35, "mrr_min": 1000,  "mrr_max": 4999,  "churn_rate": 0.03},
-    "SMB":         {"weight": 0.45, "mrr_min": 200,   "mrr_max": 999,   "churn_rate": 0.06},
+    "Enterprise":  {"weight": 0.20, "mrr_min": 5000,  "mrr_max": 15000, "churn_rate": 0.02},
+    "Mid-Market":  {"weight": 0.35, "mrr_min": 1000,  "mrr_max": 4999,  "churn_rate": 0.08},
+    "SMB":         {"weight": 0.45, "mrr_min": 200,   "mrr_max": 999,   "churn_rate": 0.15},
 }
 
 def generate_customers():

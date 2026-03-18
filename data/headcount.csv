@@ -1,43 +1,43 @@
 employee_id,name,department,salary,hire_date,status
-1,Steve Gonzalez,Sales & Marketing,65000.0,2025-04-05,Active
-2,Suzanne Gonzalez,Sales & Marketing,97000.0,2024-08-10,Active
-3,Kyle Smith,Sales & Marketing,76000.0,2023-03-12,Active
-4,Cody Peterson,Sales & Marketing,93000.0,2024-01-05,Active
-5,Belinda Montgomery,Sales & Marketing,76000.0,2023-07-13,Active
-6,Susan Ballard,Sales & Marketing,84000.0,2023-12-02,Active
-7,Denise Richardson,Sales & Marketing,65000.0,2023-08-15,Active
-8,David Mckay,Sales & Marketing,116000.0,2023-08-17,Active
-9,Nicholas Smith,Sales & Marketing,82000.0,2024-07-17,Active
-10,Alexis Tucker,Sales & Marketing,72000.0,2025-06-25,Active
-11,Lynn Banks,Sales & Marketing,71000.0,2025-06-30,Active
-12,Valerie Cordova,Sales & Marketing,84000.0,2025-04-28,Active
-13,Lance Brown,R&D,127000.0,2025-08-13,Active
-14,Jessica Griffin,R&D,82000.0,2023-05-19,Active
-15,Robert Werner,R&D,94000.0,2023-09-12,Active
-16,Emily Clark,R&D,100000.0,2024-04-13,Active
-17,James Park,R&D,108000.0,2023-09-29,Active
-18,James Herrera,R&D,88000.0,2024-11-02,Active
-19,Rachel Fuller,R&D,96000.0,2023-11-05,Active
-20,Jacob Wallace,R&D,130000.0,2024-04-06,Active
-21,Megan Fletcher,R&D,115000.0,2024-03-01,Active
-22,Jason Gonzalez,R&D,127000.0,2024-12-10,Active
-23,Thomas Cruz,G&A,77000.0,2024-11-04,Active
-24,Joseph Green,G&A,85000.0,2025-04-21,Active
-25,Dean James,G&A,57000.0,2023-01-29,Active
-26,Peter Greene,G&A,105000.0,2025-03-21,Active
-27,Kimberly Bell,G&A,72000.0,2024-10-28,Active
-28,Karen Oliver,G&A,104000.0,2024-12-25,Active
-29,Edward White DDS,Engineering,150000.0,2024-08-05,Active
-30,Jason Herrera,Engineering,141000.0,2024-01-26,Active
-31,Melissa Flores,Engineering,96000.0,2023-02-21,Active
-32,Michelle Cunningham,Engineering,134000.0,2025-04-04,Active
-33,Autumn Dixon,Engineering,135000.0,2024-10-24,Active
-34,Peter Collins,Engineering,118000.0,2024-05-13,Active
-35,James Jones,Engineering,90000.0,2023-10-20,Active
-36,Brandy Clark,Engineering,99000.0,2023-09-27,Active
-37,Samuel Mullins,Operations,64000.0,2023-02-08,Active
-38,Jennifer Solomon,Operations,64000.0,2025-05-11,Active
-39,Mario Johnson,Operations,60000.0,2023-06-08,Active
-40,James Huber,Operations,86000.0,2025-03-23,Active
-41,Brandy Little,Operations,93000.0,2024-01-11,Active
-42,Michael Pena,Operations,57000.0,2023-06-17,Active
+1,Steven Jenkins,Sales & Marketing,87000.0,2025-02-27,Active
+2,Anthony Munoz,Sales & Marketing,118000.0,2023-04-17,Active
+3,Tamara Gonzales,Sales & Marketing,114000.0,2024-11-28,Active
+4,Richard Mcdaniel,Sales & Marketing,92000.0,2023-01-31,Active
+5,Alison Marshall,Sales & Marketing,104000.0,2024-12-03,Active
+6,Mr. George Bennett,Sales & Marketing,116000.0,2024-05-22,Active
+7,Lisa Wheeler,Sales & Marketing,81000.0,2025-04-21,Active
+8,William Moore,Sales & Marketing,69000.0,2023-06-21,Active
+9,Kathryn Lin,Sales & Marketing,65000.0,2023-05-04,Active
+10,Patricia Diaz,Sales & Marketing,93000.0,2025-01-17,Active
+11,Mindy Gomez,Sales & Marketing,115000.0,2023-04-05,Active
+12,Tammy Brown,Sales & Marketing,77000.0,2024-07-24,Active
+13,Donna Gibson,R&D,95000.0,2023-06-10,Active
+14,Barry Gallegos,R&D,148000.0,2025-04-15,Active
+15,Thomas Collins,R&D,132000.0,2023-10-14,Active
+16,Marissa Rios,R&D,110000.0,2023-06-30,Active
+17,Jessica Williams,R&D,115000.0,2025-07-16,Active
+18,Dawn White,R&D,98000.0,2024-04-16,Active
+19,Cindy Fernandez,R&D,128000.0,2025-05-14,Active
+20,William Campos,R&D,128000.0,2025-06-30,Active
+21,Allison Hall,R&D,88000.0,2023-02-19,Active
+22,Laura Williams,R&D,125000.0,2023-07-18,Active
+23,Charles Fox,G&A,103000.0,2023-06-17,Active
+24,Madeline James,G&A,100000.0,2025-08-14,Active
+25,Jacqueline Martinez,G&A,93000.0,2023-01-26,Active
+26,Jacqueline Baldwin,G&A,99000.0,2024-02-25,Active
+27,Sean Mcconnell,G&A,96000.0,2025-06-15,Active
+28,David Ward,G&A,67000.0,2023-06-01,Active
+29,Larry Lopez,Engineering,120000.0,2024-03-31,Active
+30,Glenn Ortiz,Engineering,128000.0,2023-05-16,Active
+31,Jessica Mcdonald,Engineering,136000.0,2024-02-14,Active
+32,Vincent Hernandez,Engineering,99000.0,2024-02-21,Active
+33,Thomas Roberts,Engineering,85000.0,2024-04-24,Active
+34,Jimmy Vega,Engineering,153000.0,2023-10-13,Active
+35,Courtney Brown,Engineering,147000.0,2024-10-23,Active
+36,Terry Daniel,Engineering,142000.0,2025-08-05,Active
+37,Melissa Fuller,Operations,66000.0,2024-12-18,Active
+38,Michael Yang,Operations,87000.0,2023-06-06,Active
+39,Joshua Wood,Operations,74000.0,2025-08-12,Active
+40,Seth Strong,Operations,92000.0,2023-01-26,Active
+41,Jodi Bush,Operations,65000.0,2024-01-12,Active
+42,Edward Henry,Operations,80000.0,2024-06-15,Active
