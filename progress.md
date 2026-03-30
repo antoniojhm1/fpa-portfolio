@@ -41,11 +41,17 @@
   - Budget vs actual by department, ±10% materiality flagging
   - Bar chart, avg monthly variance % horizontal bar chart, variance heatmap
   - Charts saved: variance_by_dept.png, variance_avg_by_dept.png, variance_heatmap.png
+- [x] Notebook 4: Scenario analysis complete
+  - Upside: $1.54M MRR | Base: $0.98M MRR | Downside: $0.50M MRR
+  - Upside-to-Downside gap: $12.5M annualized
+  - Chart saved: scenario_analysis.png
 
-## Phase 4 — Power BI Dashboard (UPCOMING)
-- [ ] Connect Power BI to SQLite
-- [ ] Build executive dashboard
+## Phase 4 — Power BI Dashboard ✓ COMPLETE (March 30 2026)
+- [x] Connected Power BI to SQLite (forge.db) — 5 tables loaded
+- [x] Built 4 KPI cards: Total ARR, MRR, Active Customers, Avg MRR per Customer
+- [x] Built 3 charts: Revenue by Segment, Budget vs Actual by Department, Cohort Retention
+- [x] Dashboard file saved: forge_dashboard.pbix
 
-## Phase 5 — Portfolio HTML Page (UPCOMING)
+## Phase 5 — Portfolio HTML Page (NEXT)
 - [ ] Build public portfolio page
 - [ ] Deploy via GitHub Pages
