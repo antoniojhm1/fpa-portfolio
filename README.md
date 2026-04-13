@@ -6,7 +6,7 @@
 ## About this project
 
 I built this project to develop and demonstrate the technical skills 
-required in modern FP&A roles — SQL, Python, Power BI, and data modeling — 
+required in modern FP&A roles  SQL, Python, Power BI, and data modeling  
 while completing my co-op at State Street as a Pricing Analyst.
 
 FORGE is a fictional B2B SaaS company I designed from scratch. 
@@ -49,8 +49,6 @@ concepts faster than I could on my own.
 
 Specifically: Claude helped write and debug Python code, suggested 
 database schema improvements, and assisted with Power BI DAX syntax. 
-All analytical conclusions, business assumptions, and written findings 
-are my own.
 
 ---
 
@@ -76,4 +74,4 @@ are my own.
 Antonio Heredia · Co-op Financial Analyst · State Street  
 Honours Economics & Finance · Toronto Metropolitan University
 
-[LinkedIn](https://www.linkedin.com/in/antonio-heredia/) · [Portfolio Page](#)
+[LinkedIn](https://www.linkedin.com/in/antonio-heredia/) 
