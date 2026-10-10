@@ -1,0 +1,420 @@
+<title>Make the Turn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Yellowtail&display=swap">
+<style>
+/* Layout: a clubhouse campaign book — hero with the hat, then brief, four ad cards with Buzzy prompts, and the flight plan set as a golf scorecard. */
+:root {
+  --bg: #F4F6F2;          /* brim-white, slight green bias */
+  --surface: #FFFFFF;
+  --ink: #16251C;
+  --muted: #56655B;
+  --line: #D6DDD5;
+  --green: #1E4A32;       /* brim + puff embroidery */
+  --green-soft: #E3ECE5;
+  --gold: #A9821F;        /* SOCIAL thread, darkened for text contrast */
+  --gold-bright: #D4AF37;
+  --on-green: #F4F6F2;
+  --code-bg: #EEF2EC;
+  --display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --script: "Yellowtail", "Brush Script MT", cursive;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1712; --surface: #16211A; --ink: #E7EDE8; --muted: #9DAEA2; --line: #2A3A30;
+    --green: #8CC3A0; --green-soft: #1C2D22; --gold: #D9B653; --gold-bright: #E2C268;
+    --on-green: #0F1712; --code-bg: #111B15; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1712; --surface: #16211A; --ink: #E7EDE8; --muted: #9DAEA2; --line: #2A3A30;
+  --green: #8CC3A0; --green-soft: #1C2D22; --gold: #D9B653; --gold-bright: #E2C268;
+  --on-green: #0F1712; --code-bg: #111B15; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: grid; gap: 64px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.05; text-wrap: balance; margin: 0; letter-spacing: .01em; }
+h2 { font-size: clamp(2rem, 4vw, 2.6rem); text-transform: uppercase; }
+h3 { font-size: 1.5rem; text-transform: uppercase; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-family: var(--mono); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.muted { color: var(--muted); }
+section { display: grid; gap: 24px; }
+.sec-head { display: grid; gap: 8px; }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.hero-text { display: grid; gap: 18px; min-width: 0; }
+.brand { font-family: var(--script); font-size: 2.2rem; color: var(--green); line-height: 1; }
+.brand small { display: block; font-family: var(--body); font-size: .72rem; letter-spacing: .5em; color: var(--gold); margin-top: 6px; }
+.hero h1 { font-size: clamp(3.4rem, 9vw, 6.2rem); text-transform: uppercase; color: var(--ink); }
+.hero h1 em { font-style: normal; color: var(--green); }
+.tagline { font-size: 1.2rem; color: var(--muted); }
+.hero-img { position: relative; }
+.hero-img img { width: 100%; border-radius: 6px; display: block; aspect-ratio: 1 / 1.05; object-fit: cover; }
+.hero-img figcaption { font-family: var(--mono); font-size: .72rem; color: var(--muted); margin-top: 8px; }
+.notice { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 14px 16px; font-size: .92rem; display: grid; gap: 4px; }
+.notice strong { color: var(--green); }
+
+/* Brief grid */
+.brief { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.brief > div { background: var(--surface); padding: 20px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.brief h3 { font-size: 1.1rem; color: var(--green); }
+.brief ul { margin: 0; padding-left: 18px; }
+.brief li + li { margin-top: 4px; }
+
+/* Product lock */
+.lock { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: start; background: var(--green-soft); border-radius: 6px; padding: 20px; }
+.lock img { width: 100%; border-radius: 4px; display: block; }
+.lock-body { display: grid; gap: 12px; min-width: 0; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.sw { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: .78rem; }
+.sw i { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line); display: inline-block; }
+
+/* Ad cards */
+.ads { display: grid; gap: 28px; }
+.ad { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; display: grid; grid-template-columns: 260px 1fr; overflow: hidden; }
+.ad-meta { background: var(--green); color: var(--on-green); padding: 22px; display: grid; gap: 14px; align-content: start; }
+.ad-meta .num { font-family: var(--display); font-size: 3.2rem; line-height: .9; font-weight: 700; color: var(--gold-bright); }
+.ad-meta h3 { color: var(--on-green); }
+.ad-meta dl { margin: 0; display: grid; gap: 8px; font-size: .86rem; }
+.ad-meta dt { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; opacity: .75; }
+.ad-meta dd { margin: 0; }
+.ad-body { padding: 22px; display: grid; gap: 18px; min-width: 0; }
+.steps { display: grid; gap: 14px; }
+.step { display: grid; gap: 6px; min-width: 0; }
+.step-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.tool { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
+pre { margin: 0; background: var(--code-bg); border: 1px solid var(--line); border-radius: 4px; padding: 14px; font-family: var(--mono); font-size: .8rem; line-height: 1.55; white-space: pre-wrap; word-break: break-word; color: var(--ink); }
+button.copy { font-family: var(--mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; background: transparent; color: var(--green); border: 1px solid var(--green); border-radius: 3px; padding: 4px 10px; cursor: pointer; }
+button.copy:hover { background: var(--green); color: var(--on-green); }
+button.copy:focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 2px; }
+.copyblock { display: grid; gap: 10px; }
+.copyrow { display: grid; grid-template-columns: 120px 1fr; gap: 12px; font-size: .92rem; border-top: 1px solid var(--line); padding-top: 10px; }
+.copyrow span:first-child { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+
+/* Scorecard */
+.scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table.card { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .9rem; font-variant-numeric: tabular-nums; }
+table.card th, table.card td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+table.card thead th { background: var(--green); color: var(--on-green); font-family: var(--display); font-size: 1rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+table.card td.hole { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: var(--green); width: 64px; text-align: center; border-right: 1px solid var(--line); }
+table.card td.num { text-align: right; font-family: var(--mono); }
+table.card tr.total td { font-weight: 600; background: var(--green-soft); border-bottom: 0; }
+.chip { display: inline-block; font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--green-soft); color: var(--green); }
+.chip.gold { color: var(--gold); }
+
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.kpi { border-top: 3px solid var(--green); padding-top: 10px; display: grid; gap: 2px; }
+.kpi b { font-family: var(--display); font-size: 1.9rem; color: var(--ink); }
+.kpi span { font-size: .85rem; color: var(--muted); }
+
+ol.checklist { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 70ch; }
+footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+@media (max-width: 860px) {
+  .hero, .lock, .ad { grid-template-columns: 1fr; }
+  .brief { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .lock img { max-width: 260px; }
+  .copyrow { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  button.copy { transition: background .15s, color .15s; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-text">
+      <div class="brand">Caddie<small>— SOCIAL —</small></div>
+      <span class="eyebrow">Launch campaign · Fall 2026 · Built for Buzzy AI</span>
+      <h1>Make the <em>Turn</em></h1>
+      <p class="tagline">Golf is a four-hour hang with a scorecard. Caddie Social is the hat for the people who play it that way.</p>
+      <div class="notice">
+        <strong>How to use this page</strong>
+        <span>Every ad below has copy-ready prompts in Buzzy's three-step order: Product (Nano Pro) → Scene (GPT Image 2) → Video (Seedance 2.5). Upload <code>hat-front.jpg</code> as the product reference first, then paste the prompts in order.</span>
+      </div>
+    </div>
+    <figure class="hero-img" style="margin:0">
+      <img src="assets/hat-front.jpg" alt="Caddie Social rope hat: white perforated crown, green 3D script logo, gold SOCIAL wordmark, forest green brim">
+      <figcaption>Hero SKU · White / Forest rope hat · product reference for every Buzzy step</figcaption>
+    </figure>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">The brief</span>
+      <h2>Why "Make the Turn"</h2>
+      <p class="muted">The turn is the stop between the 9th and 10th holes: snacks, drinks, a little trash talk. It is the most social ten minutes in golf, and it is exactly what this brand is named after.</p>
+    </div>
+    <div class="brief">
+      <div>
+        <h3>Audience</h3>
+        <ul>
+          <li>Social golfers, 22–40, who play scrambles, leagues and Topgolf nights</li>
+          <li>Golf-curious friends of golfers who buy for the look</li>
+          <li>Gift buyers in November–December</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Single message</h3>
+        <p>Every round needs a social. Caddie Social is the hat your group wears to it.</p>
+        <p class="muted">Proof points: perforated performance crown, rope-front classic shape, embroidered 3D logo.</p>
+      </div>
+      <div>
+        <h3>Tone</h3>
+        <ul>
+          <li>Clubhouse, not country club</li>
+          <li>Warm, quick, a little cheeky</li>
+          <li>Group shots over solo hero shots</li>
+          <li>Golden hour, real grass, real laughs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Product lock</span>
+      <h2>Keep the hat exact</h2>
+      <p class="muted">AI video drifts on logos. Paste this block at the end of every Buzzy prompt so the embroidery, colors and rope stay true to the real product.</p>
+    </div>
+    <div class="lock">
+      <img src="assets/hat-three-quarter.jpg" alt="Three-quarter view showing laser-perforated side panels and green eyelet">
+      <div class="lock-body">
+        <div class="step">
+          <div class="step-head"><span class="tool">Product lock · append to every prompt</span><button class="copy" type="button" data-target="lock">Copy</button></div>
+<pre id="lock">PRODUCT LOCK: Use the uploaded Caddie Social hat as the exact product. 5-panel structured rope cap. Bright white front panels. Laser-perforated white side and back panels. Flat-to-slight-curve dark forest green brim with tonal green stitching rows. Green and white braided rope across the front above the brim. Logo: "Caddie" in raised 3D puff embroidery, forest green connected script with a long swash underline from the "C"; below it "SOCIAL" in flat gold embroidered serif capitals, letter-spaced, with a short gold dash on each side. Green top button and green eyelets. Do not change, re-letter, mirror or simplify the logo. No other branding visible.</pre>
+        </div>
+        <div class="swatches">
+          <span class="sw"><i style="background:#FFFFFF"></i>Crown white</span>
+          <span class="sw"><i style="background:#1E4A32"></i>Forest green</span>
+          <span class="sw"><i style="background:#D4AF37"></i>Social gold</span>
+          <span class="sw"><i style="background:linear-gradient(90deg,#1E4A32 50%,#FFFFFF 50%)"></i>Rope</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Creative · 4 assets</span>
+      <h2>The ads</h2>
+    </div>
+    <div class="ads">
+
+      <!-- Ad 1 -->
+      <article class="ad">
+        <div class="ad-meta">
+          <span class="num">01</span>
+          <h3>Make the Turn · Hero film</h3>
+          <dl>
+            <div><dt>Format</dt><dd>30s · 9:16 and 16:9</dd></div>
+            <div><dt>Placement</dt><dd>Meta Reels, TikTok, YouTube pre-roll</dd></div>
+            <div><dt>Job</dt><dd>Awareness, sets the world</dd></div>
+          </dl>
+        </div>
+        <div class="ad-body">
+          <div class="steps">
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 1 · Product · Nano Pro</span><button class="copy" type="button" data-target="a1p">Copy</button></div>
+<pre id="a1p">Studio product shot of the uploaded Caddie Social rope hat, three-quarter front angle, resting on a folded white golf towel on a light oak bench. Soft window light from the left, gentle shadow, crisp embroidery texture visible on the green 3D "Caddie" script and gold "SOCIAL". Shallow depth of field. Photoreal, 4K.</pre>
+            </div>
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 2 · Scene · GPT Image 2</span><button class="copy" type="button" data-target="a1s">Copy</button></div>
+<pre id="a1s">Golden-hour golf course halfway house, late October. A foursome of friends in their late 20s, mixed group, casual golf polos and quarter-zips, laughing at a wooden counter with hot dogs and canned drinks, golf cart parked behind them. The man in front wears the Caddie Social hat facing camera. Warm low sun, long shadows, autumn trees, 35mm film look, natural skin, candid.</pre>
+            </div>
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 3 · Video · Seedance 2.5 · 6 shots</span><button class="copy" type="button" data-target="a1v">Copy</button></div>
+<pre id="a1v">30-second golf lifestyle commercial, 6 shots, golden hour, handheld 35mm film feel, consistent characters across shots.
+Shot 1 (0-4s): Macro push-in on the Caddie Social hat sitting on a golf cart dash, dew on the brim, sun flare.
+Shot 2 (4-9s): Friend grabs the hat, puts it on, slow dolly as the foursome walks off the 9th green high-fiving.
+Shot 3 (9-14s): Halfway house. Drinks clink, someone tosses a hot dog, everyone laughs. Hat logo clearly visible.
+Shot 4 (14-19s): Low angle on the 10th tee, player in the hat takes a full swing, ball flies into orange sky.
+Shot 5 (19-25s): Slow motion, cart ride, rope detail and perforated side panel catching backlight, hair moving in wind.
+Shot 6 (25-30s): Group photo on the 18th green at sunset, all four in the hat, freeze frame.
+End card: white background, "Make the Turn." in forest green, Caddie Social logo below.</pre>
+            </div>
+          </div>
+          <div class="copyblock">
+            <div class="copyrow"><span>VO</span><p>"Front nine's for golf. The turn's for the group. Back nine's for whoever's buying. Caddie Social. Make the turn."</p></div>
+            <div class="copyrow"><span>Primary text</span><p>Golf's best ten minutes happen between holes 9 and 10. Dress for them. 🏌️ The Caddie Social rope hat is out now.</p></div>
+            <div class="copyrow"><span>Headline</span><p>Make the Turn</p></div>
+            <div class="copyrow"><span>CTA</span><p>Shop now</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ad 2 -->
+      <article class="ad">
+        <div class="ad-meta">
+          <span class="num">02</span>
+          <h3>"Group chat said rope hats" · UGC</h3>
+          <dl>
+            <div><dt>Format</dt><dd>15–20s · 9:16 selfie</dd></div>
+            <div><dt>Placement</dt><dd>TikTok, Reels, Stories</dd></div>
+            <div><dt>Job</dt><dd>Conversion, main spend driver</dd></div>
+          </dl>
+        </div>
+        <div class="ad-body">
+          <div class="steps">
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 2 · Scene · GPT Image 2</span><button class="copy" type="button" data-target="a2s">Copy</button></div>
+<pre id="a2s">Selfie-angle phone photo, woman in her mid-20s sitting in a golf cart in the parking lot of a public course, holding the Caddie Social hat up next to her face, excited expression, cart key in other hand, overcast soft daylight, iPhone front camera look, slight grain, authentic UGC style.</pre>
+            </div>
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 3 · Video · Seedance 2.5 · UGC Ads preset</span><button class="copy" type="button" data-target="a2v">Copy</button></div>
+<pre id="a2v">UGC-style vertical selfie video, 18 seconds, handheld phone, talking to camera, natural lip sync.
+0-3s: Creator in golf cart holds the Caddie Social hat to camera. Says: "The group chat said everyone has to wear rope hats Saturday."
+3-8s: Turns the hat, shows the perforated side panels and the green and white rope up close.
+8-13s: Puts it on, checks herself in the cart mirror. Says: "It's breathable, it's cute, and the embroidery is puffy. Obsessed."
+13-18s: Camera flips to three friends in matching hats waving from the next cart. Says: "Caddie Social. Link's in the bio."
+Bright natural light, real course parking lot, casual and unpolished.</pre>
+            </div>
+          </div>
+          <div class="copyblock">
+            <div class="copyrow"><span>On-screen hook</span><p>POV: the group chat made a dress code</p></div>
+            <div class="copyrow"><span>Primary text</span><p>Saturday scramble dress code: rope hats. Ours has a perforated crown so you can actually wear it all 18. 🟢🟡</p></div>
+            <div class="copyrow"><span>Alt hooks</span><p>"Golf hats for people who mostly drive the cart" · "Rating my foursome's hats" · "This hat gets more compliments than my swing"</p></div>
+            <div class="copyrow"><span>CTA</span><p>Shop now</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ad 3 -->
+      <article class="ad">
+        <div class="ad-meta">
+          <span class="num">03</span>
+          <h3>Clubhouse poster set · Statics</h3>
+          <dl>
+            <div><dt>Format</dt><dd>3 images · 4:5 feed, 9:16 story</dd></div>
+            <div><dt>Placement</dt><dd>Meta feed, Pinterest, site banners</dd></div>
+            <div><dt>Job</dt><dd>Retargeting, gifting push</dd></div>
+          </dl>
+        </div>
+        <div class="ad-body">
+          <div class="steps">
+            <div class="step">
+              <div class="step-head"><span class="tool">Poster A · Product · Nano Pro</span><button class="copy" type="button" data-target="a3a">Copy</button></div>
+<pre id="a3a">Minimal luxury product poster, the Caddie Social hat centered on a putting green fringe, ball and flagstick shadow beside it, overhead late-afternoon light. Large negative space at top. Headline in clean forest green condensed type at top: "EVERY ROUND NEEDS A SOCIAL." Small gold text at bottom: "CADDIE SOCIAL". 4:5.</pre>
+            </div>
+            <div class="step">
+              <div class="step-head"><span class="tool">Poster B · Scene · GPT Image 2</span><button class="copy" type="button" data-target="a3b">Copy</button></div>
+<pre id="a3b">Flat lay on white linen: the Caddie Social hat, a scorecard with a pencil, three golf tees, a cold can with condensation, sunglasses. Clean top-down shot, soft shadows. Handwritten-style text on the scorecard reads "F9 / TURN / B9". Headline at top in forest green: "PACKED FOR THE TURN." 4:5.</pre>
+            </div>
+            <div class="step">
+              <div class="step-head"><span class="tool">Poster C · Gifting · GPT Image 2</span><button class="copy" type="button" data-target="a3c">Copy</button></div>
+<pre id="a3c">Holiday gift scene, the Caddie Social hat half out of a forest green gift box with gold ribbon, small sprig of pine, warm string lights blurred in background, wood table. Headline in gold serif capitals: "FOR THE ONE WHO ALWAYS SAYS ONE MORE NINE." 4:5 and 9:16.</pre>
+            </div>
+          </div>
+          <div class="copyblock">
+            <div class="copyrow"><span>Primary text</span><p>Still thinking about it? The Caddie Social rope hat is the easiest yes in golf.</p></div>
+            <div class="copyrow"><span>Gift copy</span><p>Gift the golfer in the group chat. Ships in time for the holidays.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ad 4 -->
+      <article class="ad">
+        <div class="ad-meta">
+          <span class="num">04</span>
+          <h3>Tee-box spin · Bumper</h3>
+          <dl>
+            <div><dt>Format</dt><dd>6s · 9:16 and 1:1, no VO</dd></div>
+            <div><dt>Placement</dt><dd>YouTube Shorts bumper, Stories</dd></div>
+            <div><dt>Job</dt><dd>Cheap reach, frequency</dd></div>
+          </dl>
+        </div>
+        <div class="ad-body">
+          <div class="steps">
+            <div class="step">
+              <div class="step-head"><span class="tool">Step 3 · Video · Seedance 2.5 · Camera movements</span><button class="copy" type="button" data-target="a4v">Copy</button></div>
+<pre id="a4v">6-second product reveal. The Caddie Social hat sits on top of a driver headcover on a tee box at sunrise, mist over the fairway. Camera orbits 180 degrees around the hat in one smooth move, sun flare crosses the green 3D "Caddie" embroidery. On the last second a golf ball is teed up in the foreground and is struck out of frame. Text slams in: "MAKE THE TURN." Crisp, cinematic, 24fps.</pre>
+            </div>
+          </div>
+          <div class="copyblock">
+            <div class="copyrow"><span>Overlay</span><p>MAKE THE TURN. · CADDIE SOCIAL</p></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Flight plan · 4 weeks from Oct 19</span>
+      <h2>The scorecard</h2>
+      <p class="muted">Budget figures are an example starting test of $3,000. Scale whatever cards beat target CPA in week 2.</p>
+    </div>
+    <div class="scroll">
+      <table class="card">
+        <thead>
+          <tr><th>Hole</th><th>Dates</th><th>Phase</th><th>Assets live</th><th>Channels</th><th style="text-align:right">Budget</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="hole">1</td><td>Oct 19–25</td><td><span class="chip">Tee off</span><br>Launch + creative test</td><td>01 Hero film, 02 UGC (3 hooks), 04 Bumper</td><td>TikTok, Meta Reels</td><td class="num">$600</td></tr>
+          <tr><td class="hole">2</td><td>Oct 26–Nov 1</td><td><span class="chip">Fairway</span><br>Cut losers, scale winning hook</td><td>02 UGC winner + new hook, 01 Hero cutdown 15s</td><td>TikTok, Meta, YouTube Shorts</td><td class="num">$750</td></tr>
+          <tr><td class="hole">3</td><td>Nov 2–8</td><td><span class="chip gold">The turn</span><br>Retarget viewers + site visitors</td><td>03 Posters A + B, 02 UGC</td><td>Meta feed, Pinterest</td><td class="num">$750</td></tr>
+          <tr><td class="hole">4</td><td>Nov 9–15</td><td><span class="chip gold">Back nine</span><br>Gifting push</td><td>03 Poster C, 01 Hero with gift end card</td><td>Meta, TikTok, Pinterest</td><td class="num">$900</td></tr>
+          <tr class="total"><td class="hole">Out</td><td colspan="4">Split: 55% conversion (UGC + retargeting), 30% awareness (hero + bumper), 15% gifting statics</td><td class="num">$3,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Par for the course</span>
+      <h2>Targets</h2>
+      <p class="muted">Starting benchmarks for apparel on paid social. Replace with your own after week 1.</p>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b>≥ 1.2%</b><span>Link CTR on UGC</span></div>
+      <div class="kpi"><b>≥ 25%</b><span>3-second hold on hero film</span></div>
+      <div class="kpi"><b>≤ $25</b><span>Cost per purchase (example)</span></div>
+      <div class="kpi"><b>≥ 2.0×</b><span>ROAS by week 4</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="eyebrow">Production order</span>
+      <h2>Running it in Buzzy</h2>
+    </div>
+    <ol class="checklist">
+      <li>Upload <code>assets/hat-front.jpg</code> and <code>assets/hat-three-quarter.jpg</code> as product references in a new Buzzy project.</li>
+      <li>Generate the Nano Pro product shots first. Approve one clean hat render before making any scenes.</li>
+      <li>Feed the approved product shot into each GPT Image 2 scene prompt, with the product lock appended.</li>
+      <li>Use the approved scene stills as start frames for Seedance 2.5. Generate each shot separately, then stitch.</li>
+      <li>Check every frame for logo drift. Re-run any shot where "Caddie" or "SOCIAL" is misspelled or warped.</li>
+      <li>Export 9:16 first, then 1:1 and 16:9 crops. Add captions; most viewers watch with sound off.</li>
+    </ol>
+  </section>
+
+  <footer>Campaign kit for Caddie Social. Product photos supplied by the brand. Budget and KPI figures are example planning numbers, not results.</footer>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.target);
+    var text = el.textContent;
+    function done(label) { btn.textContent = label; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); }
+    function fallback() {
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      done('Selected');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done('Copied'); }, fallback);
+    } else { fallback(); }
+  });
+});
+</script>
